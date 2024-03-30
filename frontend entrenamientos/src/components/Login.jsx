@@ -66,11 +66,19 @@ const Login = () => {
                     height: '92vh',
                     width: '60%',
                     overflow: "hidden",
-                    backgroundr: "#B1B1B1"
+                    backgroundColor: "#B1B1B1"
                 }}>
                 </div>
 
-                <div className='login-container' style={{ width: '30%', height: '70%' }}>
+                <div className='login-container' style={{ 
+                    width: '30%', 
+                    height: '70%', 
+                    backgroundColor: '#000', 
+                    color: '#fff', 
+                    padding: '20px', 
+                    borderRadius: '10px', 
+                    boxShadow: '0 0 10px rgba(0,0,0,0.5)' 
+                }}>
                     <h1>Iniciar Sesión</h1>
                     <Form onFinish={handleLogin}>
                         <div>
@@ -81,6 +89,7 @@ const Login = () => {
                                     placeholder="Correo electrónico"
                                     value={email}
                                     onChange={e => setEmail(e.target.value)}
+                                    style={{ borderBottom: "2px solid #ccc" }}
                                 />
                             </Form.Item>
                             <Form.Item className="form-group">
@@ -89,9 +98,7 @@ const Login = () => {
                                     placeholder="Contraseña"
                                     value={password}
                                     onChange={e => setPassword(e.target.value)}
-                                    style={{
-                                        borderBottom: "2px solid #ccc"
-                                    }}
+                                    style={{ borderBottom: "2px solid #ccc" }}
                                 />
                             </Form.Item>
                             <Form.Item className="forgot-password-link">
@@ -100,6 +107,7 @@ const Login = () => {
                             <div className='inicia-sesion'>
                                 <Form.Item className="form-group">
                                     <Button type="link" htmlType="submit" disabled={!isFormValid()} loading={isLoading}
+                                        style={{ backgroundColor: '#1e90ff', color: '#fff' }}
                                     >
                                         Iniciar sesión
                                     </Button>

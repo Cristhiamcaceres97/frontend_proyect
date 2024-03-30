@@ -53,25 +53,34 @@ const Register = () => {
         return <Login to="/login" />;
     }
 
-    return (
-        <>
-            <div style={{ display: "flex", overflow: "hidden" }}>
-                <div className='padre-login' style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    backgroundImage: `url(/nuevo2.svg)`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'right',
-                    backgroundRepeat: 'no-repeat',
-                    height: '92vh',
-                    width: '60%',
-                    overflow: "hidden",
-                    backgroundr: "#B1B1B1"
-                }}>
-                </div>
-
-                <div className='register-container' style={{ width: '30%', height: '70%' }}>
-                    <h1>Registrarse</h1>
+  
+        return (
+            <>
+                <div style={{ display: "flex", overflow: "hidden" }}>
+                    <div className='padre-login' style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        backgroundImage: `url(/nuevo2.svg)`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'right',
+                        backgroundRepeat: 'no-repeat',
+                        height: '92vh',
+                        width: '60%',
+                        overflow: "hidden",
+                        backgroundColor: "#B1B1B1"
+                    }}>
+                    </div>
+    
+                    <div className='register-container' style={{ 
+                        width: '30%', 
+                        height: '70%', 
+                        backgroundColor: '#000', 
+                        color: '#fff', 
+                        padding: '20px', 
+                        borderRadius: '10px', 
+                        boxShadow: '0 0 10px rgba(0,0,0,0.5)' 
+                    }}>
+                        <h1>Registrarse</h1>
                     <Form onFinish={handleSubmit}>
                         <Form.Item>
                             <Input
