@@ -63,21 +63,22 @@ const Login = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                     backgroundRepeat: 'no-repeat',
-                    height: '92vh',
+                    minHeight: '100vh',
+                    maxHeight: "120vh",
                     width: '60%',
                     overflow: "hidden",
                     backgroundColor: "#B1B1B1"
                 }}>
                 </div>
 
-                <div className='login-container' style={{ 
-                    width: '30%', 
-                    height: '70%', 
-                    backgroundColor: '#000', 
-                    color: '#fff', 
-                    padding: '20px', 
-                    borderRadius: '10px', 
-                    boxShadow: '0 0 10px rgba(0,0,0,0.5)' 
+                <div className='login-container' style={{
+                    width: '30%',
+                    height: '70%',
+                    backgroundColor: '#000',
+                    color: '#fff',
+                    padding: '20px',
+                    borderRadius: '10px',
+                    boxShadow: '0 0 10px rgba(0,0,0,0.5)'
                 }}>
                     <h1>Iniciar Sesión</h1>
                     <Form onFinish={handleLogin}>

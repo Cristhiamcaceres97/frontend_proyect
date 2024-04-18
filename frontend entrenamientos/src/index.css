@@ -71,7 +71,6 @@
 .padre-login {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   position: relative;
 }
 
@@ -82,7 +81,6 @@
   right: 0;
   width: 1px; 
   height: 100%;
-  background-color: red; 
   border-radius: 50px; 
 }
 
@@ -92,8 +90,8 @@
   box-shadow: 0 2px 4px rgba(8, 0.6, 0, 0.1);
   padding: 20px;
   width: 300px;
-  margin-top: 100px;
-  margin-left: 30px;
+  margin-top: 60px;
+  margin-left: 35px;
 }
 .login-container h1 {
   font-size: 24px;
@@ -164,8 +162,8 @@
   box-shadow: 0 2px 4px rgba(8, 0.6, 0, 0.1);
   padding: 20px;
   width: 300px;
-  margin-top: 100px;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-left: 35px;
 }
 .register-container h1 {
   font-size: 24px;

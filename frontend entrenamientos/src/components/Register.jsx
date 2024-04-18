@@ -64,7 +64,8 @@ const Register = () => {
                         backgroundSize: 'cover',
                         backgroundPosition: 'right',
                         backgroundRepeat: 'no-repeat',
-                        height: '92vh',
+                        minHeight: '100vh',
+                        maxHeight: "140vh",
                         width: '60%',
                         overflow: "hidden",
                         backgroundColor: "#B1B1B1"
@@ -108,6 +109,7 @@ const Register = () => {
                             <Checkbox
                                 checked={cycling}
                                 onChange={e => setCycling(e.target.checked)}
+                                style={{color: "#fff"}}
                             >
                                 ¿Eres ciclista?
                             </Checkbox>
