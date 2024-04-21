@@ -1,6 +1,50 @@
+/* .containerBorder {
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.border-animation {
+  animation: borderTrace 4s linear forwards;
+}
+
+@keyframes borderTrace {
+  0% {
+    border-color: transparent;
+  }
+  25% {
+    border-top-color: red;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-top-color: red;
+    border-right-color: red;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: red;
+    border-right-color: red;
+    border-bottom-color: red;
+    border-left-color: transparent;
+  }
+  100% {
+    border-color: red;
+  }
+} */
 
 
+.containerBorder {
+  position: relative;
+  border: 2px solid transparent;
+}
 
+.border-animation {
+  animation: borderTrace 5s linear;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF0000' /%3E%3Cstop offset='100%25' stop-color='%23FF0000' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+
+}
 
 
 
@@ -29,6 +73,7 @@
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -79,9 +124,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 1px; 
+  width: 1px;
   height: 100%;
-  border-radius: 50px; 
+  border-radius: 50px;
 }
 
 .login-container {
@@ -93,19 +138,23 @@
   margin-top: 60px;
   margin-left: 35px;
 }
+
 .login-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .form-group {
   margin-bottom: 15px;
 }
+
 .form-group label {
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
 }
+
 .form-group Input {
   width: 100%;
   padding: 10px;
@@ -140,14 +189,17 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
 .form-group Button:hover {
   background-color: #f9a1a1 !important;
   color: #1d1d1d !important;
 }
+
 .register-link {
   text-align: center;
   margin-top: -15px;
 }
+
 .otp-fields {
   opacity: 0;
   transition: opacity 0.3s;
@@ -156,6 +208,7 @@
 .otp-fields.show {
   opacity: 1;
 }
+
 .register-container {
   background-color: #ffffff;
   border-radius: 8px;
@@ -165,6 +218,7 @@
   margin-top: 20px;
   margin-left: 35px;
 }
+
 .register-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -203,10 +257,3 @@
 .input-password.valid {
   border-bottom-color: #28a746;
 }
-
-
-
-
-
-
-

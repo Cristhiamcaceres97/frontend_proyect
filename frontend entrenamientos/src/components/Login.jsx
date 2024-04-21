@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Input, Button, Form, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import Perfil from './Perfil';
+import PruebaBorder from './PruebaBorder';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -55,7 +56,8 @@ const Login = () => {
 
     return (
         <>
-            <div style={{ display: "flex", overflow: "hidden" }}>
+        <PruebaBorder />
+            {/* <div style={{ display: "flex", overflow: "hidden" }}>
                 <div className='padre-login' style={{
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -121,7 +123,7 @@ const Login = () => {
                         </Form.Item>
                     </Form>
                 </div>
-            </div>
+            </div> */}
             {authenticatedUser && (
                 <Perfil userData={authenticatedUser} />
             )}
